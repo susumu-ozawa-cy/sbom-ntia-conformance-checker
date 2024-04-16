@@ -1,6 +1,15 @@
-# sbom-ntia-conformance-checker
+# SPDX NTIA Conformance Checker (Action)
+
+## Usage
+
+- Generate Issue
+- Generate branch
+- Copy target json file, and rename to sbom.json.
+- Run Actions and check the checker result on the Actions log
 
 ( https://github.com/spdx/ntia-conformance-checker )
+
+---
 
 ## CLI Usage
 
@@ -22,6 +31,8 @@ To generare the output in machine-readable JSON, run:
 ```shell
 ntia-checker --file sbom.spdx --output json
 ```
+
+---
 
 # Another, Web Tool
 
