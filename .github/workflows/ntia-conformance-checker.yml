@@ -42,6 +42,7 @@ jobs:
           ls -lart .
           which ntia-checker
           ntia-checker --help
+          ntia-checker --version
       - name: Run ntia conformance checker
         continue-on-error: true
         run: |
