@@ -27,7 +27,6 @@ jobs:
         run: |
           git clone https://github.com/spdx/ntia-conformance-checker.git .
           ls -lart .
-          cd ntia_conformance_checker
           pip install .
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: checkout local sbom file
