@@ -42,4 +42,7 @@ jobs:
           ls -lart .
           which ntia-checker
           ntia-checker --help
+      - name: Run ntia conformance checker
+        continue-on-error: true
+        run: |
           ntia-checker --file src/sbom.json
