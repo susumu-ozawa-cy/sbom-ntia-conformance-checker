@@ -23,20 +23,19 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Install ntia conformance checker
+      # $ git clone https://github.com/spdx/ntia-conformance-checker.git ntia-conformance-checker
+      # $ ls -lart .
+      # $ cd ntia-conformance-checker
+      # $ pip install .
       - name: Install ntia conformance checker
         run: |
           which pip
           pip install ntia-conformance-checker
-          echo "git clone https://github.com/spdx/ntia-conformance-checker.git ntia-conformance-checker"
-          ls -lart .
-          echo "cd ntia-conformance-checker"
-          echo "pip install .
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: checkout local sbom file
         uses: actions/checkout@v4
         with:
           path: src
-
       # Runs a single command using the runners shell
       - name: Run ntia conformance checker
         run: |
