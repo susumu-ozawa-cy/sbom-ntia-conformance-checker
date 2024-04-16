@@ -32,12 +32,12 @@ jobs:
           which pip
           pip install ntia-conformance-checker
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: checkout local sbom file
+      - name: Checkout local sbom file
         uses: actions/checkout@v4
         with:
           path: src
       # Runs a single command using the runners shell
-      - name: Run ntia conformance checker
+      - name: Check ntia conformance checker version
         run: |
           ls -lart .
           which ntia-checker
