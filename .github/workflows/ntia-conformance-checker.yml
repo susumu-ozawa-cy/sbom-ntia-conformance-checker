@@ -38,7 +38,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run ntia conformance checker
         run: |
-          ls -lart .local
+          ls -lart .
           which ntia-checker
           ntia-checker --help
           ntia-checker --file src/sbom.json
