@@ -25,8 +25,9 @@ jobs:
       # Install ntia conformance checker
       - name: Install ntia conformance checker
         run: |
-          git clone https://github.com/spdx/ntia-conformance-checker.git .
+          git clone https://github.com/spdx/ntia-conformance-checker.git ntia-conformance-checker
           ls -lart .
+          cd ntia-conformance-checker
           pip install .
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: checkout local sbom file
@@ -37,6 +38,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run ntia conformance checker
         run: |
+          ls -lart .local
           which ntia-checker
           ntia-checker --help
           ntia-checker --file src/sbom.json
