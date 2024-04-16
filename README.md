@@ -22,3 +22,7 @@ To generare the output in machine-readable JSON, run:
 ```shell
 ntia-checker --file sbom.spdx --output json
 ```
+
+# Another, Web Tool
+
+- https://tools.spdx.org/app/ntia_checker/
