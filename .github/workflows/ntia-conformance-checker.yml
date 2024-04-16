@@ -25,7 +25,8 @@ jobs:
       # Install ntia conformance checker
       - name: Install ntia conformance checker
         run: |
-          git clone https://github.com/spdx/ntia-conformance-checker.git
+          git clone https://github.com/spdx/ntia-conformance-checker.git .
+          ls -lart .
           cd ntia-conformance-checker
           pip install .
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
