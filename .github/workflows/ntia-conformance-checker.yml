@@ -46,4 +46,4 @@ jobs:
       - name: Run ntia conformance checker
         continue-on-error: true
         run: |
-          ntia-checker --file src/sbom.json
+          ntia-checker --file src/sbom.spdx
